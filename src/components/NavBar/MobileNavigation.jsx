@@ -4,12 +4,15 @@ import styles from './NavBar.module.scss';
 import { CgMenu, CgClose } from 'react-icons/cg';
 
 export default function MobileNavigation() {
+    // useState for hamburger button
     const [open, setOpen] = useState(false);
     const mobileNavClosed = () => setOpen(false);
+
     const hamburgerClosed = (
         <CgMenu
             className={styles.hamburger}
             size='3rem'
+            color='rgb(2, 176, 175)'
             onClick={() => setOpen(!open)}
         ></CgMenu>
     );
@@ -17,6 +20,7 @@ export default function MobileNavigation() {
         <CgClose
             className={styles.hamburger}
             size='3rem'
+            color='rgb(2, 176, 175)'
             onClick={() => setOpen(!open)}
         ></CgClose>
     );
