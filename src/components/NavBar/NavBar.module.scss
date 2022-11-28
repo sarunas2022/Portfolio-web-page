@@ -1,0 +1,51 @@
+.navbar {
+    .navigation {
+        display: none;
+    }
+    .mobileNav {
+        .hamburger {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            cursor: pointer;
+        }
+        .links {
+            display: flex;
+            padding: 1rem;
+            gap: 1rem;
+            list-style: none;
+            flex-direction: column;
+            position: absolute;
+            right: 1rem;
+            top: 4rem;
+            background-color: aquamarine;
+            width: 40%;
+            li a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media (min-width: 48rem) {
+    .navbar {
+        .navigation {
+            background-color: rgb(51, 51, 51);
+            padding: 2rem;
+            display: flex;
+            justify-content: end;
+            .links {
+                display: flex;
+                list-style: none;
+                gap: 2rem;
+                li a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        .mobileNav {
+            display: none;
+        }
+    }
+}
