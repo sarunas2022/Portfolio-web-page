@@ -1,6 +1,85 @@
+// // mixin
+// @mixin angle($pseudo, $flip: false, $angle: 3deg) {
+//     // Possible values for $pseudo are: before, after, both
+//     @if $pseudo == 'before' or $pseudo == 'after' or $pseudo == 'both' {
+//         position: relative;
+//         z-index: 1;
+//         $selector: if($pseudo == 'both', '&:before,&:after', '&:#{$pseudo}');
+
+//         #{$selector} {
+//             background: inherit;
+//             content: '';
+//             display: block;
+//             height: 50%;
+//             left: 0;
+//             position: absolute;
+//             right: 0;
+//             z-index: -1;
+//             -webkit-backface-visibility: hidden; // for Chrome Windows
+//         }
+
+//         @if $pseudo == 'before' {
+//             #{$selector} {
+//                 top: 0;
+
+//                 @if $flip {
+//                     transform: skewY($angle * -1);
+//                     transform-origin: 0 0;
+//                 } @else {
+//                     transform: skewY($angle);
+//                     transform-origin: 100% 0;
+//                 }
+//             }
+//         }
+
+//         @if $pseudo == 'after' {
+//             #{$selector} {
+//                 bottom: 0;
+
+//                 @if $flip {
+//                     transform: skewY($angle);
+//                     transform-origin: 0 100%;
+//                 } @else {
+//                     transform: skewY($angle * -1);
+//                     transform-origin: 100%;
+//                 }
+//             }
+//         }
+
+//         @if $pseudo == 'both' {
+//             &:before {
+//                 top: 0;
+
+//                 @if $flip {
+//                     transform: skewY($angle * -1);
+//                     transform-origin: 0 0;
+//                 } @else {
+//                     transform: skewY($angle);
+//                     transform-origin: 100% 0;
+//                 }
+//             }
+
+//             &:after {
+//                 bottom: 0;
+
+//                 @if $flip {
+//                     transform: skewY($angle);
+//                     transform-origin: 0 0;
+//                 } @else {
+//                     transform: skewY($angle * -1);
+//                     transform-origin: 100%;
+//                 }
+//             }
+//         }
+//     }
+// }
+
 .container {
+    // @include angle(after);
+    height: 100vh;
     display: flex;
-    height: 80rem;
+    flex-direction: column;
+    align-items: center;
     background: #11998e; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to right,
@@ -12,4 +91,29 @@
         #38ef7d,
         #11998e
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .photo {
+        width: 25rem;
+        padding: 4rem;
+        border-radius: 20rem;
+    }
+    .headerText {
+        color: white;
+        padding-bottom: 4rem;
+        text-align: center;
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+}
+@media (min-width: 48rem) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        .headerText {
+            text-align: left;
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
 }

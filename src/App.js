@@ -2,6 +2,7 @@ import './App.scss';
 import Header from './components/header/Header';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/footer/Footer';
+import Skills from './components/sections/Skills';
 
 function App() {
     return (
@@ -9,7 +10,7 @@ function App() {
             <NavBar></NavBar>
             <Header />
             <section id='about'></section>
-            <section id='skills'></section>
+            <Skills></Skills>
             <section id='projects'></section>
             <section id='contacts'></section>
             <Footer />
