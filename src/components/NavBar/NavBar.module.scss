@@ -1,12 +1,19 @@
 .navbar {
+    height: 5rem;
     .navigation {
         display: none;
     }
     .mobileNav {
+        position: fixed;
+        width: 100%;
+        background-color: rgb(51, 51, 51);
+        padding: 2.55rem;
+        display: flex;
         .hamburger {
             position: absolute;
             right: 1rem;
-            top: 1rem;
+            top: 1.4rem;
+            z-index: 2;
             cursor: pointer;
         }
         .links {
@@ -19,7 +26,7 @@
             position: absolute;
             right: 0rem;
             top: 0rem;
-            z-index: -1;
+            z-index: 1;
             background-color: rgb(51, 51, 51);
             width: 40%;
             li a {
@@ -32,6 +39,8 @@
 @media (min-width: 48rem) {
     .navbar {
         .navigation {
+            position: fixed;
+            width: 100%;
             background-color: rgb(51, 51, 51);
             padding: 2rem;
             display: flex;

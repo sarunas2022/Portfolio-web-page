@@ -8,7 +8,6 @@ export default function NavBar() {
         <div className={styles.navbar}>
             <Navigation />
             <MobileNavigation />
-            <div className={styles.test}></div>
         </div>
     );
 }
