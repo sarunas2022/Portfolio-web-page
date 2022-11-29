@@ -5,19 +5,19 @@ export default function NavLinks(props) {
     return (
         <ul className={styles.links}>
             <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <a href='#'>Home</a>
+                <a href='#home'>Home</a>
             </li>
             <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <a href='#'>About Me</a>
+                <a href='#about'>About Me</a>
             </li>
             <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <a href='#'>Skills</a>
+                <a href='#skills'>Skills</a>
             </li>
             <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <a href='#'>Latest work</a>
+                <a href='#projects'>Latest work</a>
             </li>
             <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <a href='#'>Contact me</a>
+                <a href='#contacts'>Contact me</a>
             </li>
         </ul>
     );
