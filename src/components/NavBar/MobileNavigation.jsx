@@ -11,16 +11,16 @@ export default function MobileNavigation() {
     const hamburgerClosed = (
         <CgMenu
             className={styles.hamburger}
-            size='3rem'
-            color='rgb(2, 176, 175)'
+            size='2.5rem'
+            color='white'
             onClick={() => setOpen(!open)}
         ></CgMenu>
     );
     const hamburgerOpened = (
         <CgClose
             className={styles.hamburger}
-            size='3rem'
-            color='rgb(2, 176, 175)'
+            size='2.5rem'
+            color='white'
             onClick={() => setOpen(!open)}
         ></CgClose>
     );

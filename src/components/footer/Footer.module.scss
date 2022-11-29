@@ -1,0 +1,22 @@
+.wrapper {
+    background-color: rgb(51, 51, 51);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: auto;
+    .contactIcons {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem;
+        .icons {
+            color: white;
+        }
+    }
+
+    footer {
+        text-align: center;
+        p {
+            color: white;
+        }
+    }
+}
