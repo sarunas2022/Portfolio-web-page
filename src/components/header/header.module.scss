@@ -76,7 +76,7 @@
 
 .container {
     // @include angle(after);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,6 +102,23 @@
         text-align: center;
         h1 {
             font-size: 2.5rem;
+        }
+    }
+    .navTo {
+        position: absolute;
+        bottom: 0.1rem;
+        left: 2rem;
+        opacity: 0.9;
+        color: white;
+        padding: 1rem 2rem;
+        border: 0.2rem solid #333333;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        cursor: pointer;
+        h6 {
+            font-weight: bold;
         }
     }
 }
