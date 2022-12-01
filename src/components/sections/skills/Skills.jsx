@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
 import styles from './Skills.module.scss';
 // front-end skills images
-import htmlIcon from '../../files/techIcons/front-end/html.png';
-import cssIcon from '../../files/techIcons/front-end/css.svg';
-import JSIcon from '../../files/techIcons/front-end/javaScript.png';
-import reactIcon from '../../files/techIcons/front-end/react-icon.png';
-import sassIcon from '../../files/techIcons/front-end/sass.png';
-import muiIcon from '../../files/techIcons/front-end/mui.png';
-import bootstrapIcon from '../../files/techIcons/front-end/bootstrap.png';
+import htmlIcon from '../../../files/techIcons/front-end/html.png';
+import cssIcon from '../../../files/techIcons/front-end/css.svg';
+import JSIcon from '../../../files/techIcons/front-end/javaScript.png';
+import reactIcon from '../../../files/techIcons/front-end/react-icon.png';
+import sassIcon from '../../../files/techIcons/front-end/sass.png';
+import muiIcon from '../../../files/techIcons/front-end/mui.png';
+import bootstrapIcon from '../../../files/techIcons/front-end/bootstrap.png';
 // tool skills images
-import gitHubIcon from '../../files/techIcons/tools/Github.png';
-import postmanIcon from '../../files/techIcons/tools/postman.webp';
-import gitIcon from '../../files/techIcons/tools/Git.png';
-import vsIcon from '../../files/techIcons/tools/vs.png';
+import gitHubIcon from '../../../files/techIcons/tools/Github.png';
+import postmanIcon from '../../../files/techIcons/tools/postman.webp';
+import gitIcon from '../../../files/techIcons/tools/Git.png';
+import vsIcon from '../../../files/techIcons/tools/vs.png';
 
 // back-end skills images
-import nodeIcon from '../../files/techIcons/back-end/node.webp';
-import mySQLIcon from '../../files/techIcons/back-end/mysql.png';
-import mongoIcon from '../../files/techIcons/back-end/mongodb.png';
-import restIcon from '../../files/techIcons/back-end/rest.png';
+import nodeIcon from '../../../files/techIcons/back-end/node.webp';
+import mySQLIcon from '../../../files/techIcons/back-end/mysql.png';
+import mongoIcon from '../../../files/techIcons/back-end/mongodb.png';
+import restIcon from '../../../files/techIcons/back-end/rest.png';
 
 export default function Skills() {
     const [frontSkills, setFrontSkills] = useState(true);
