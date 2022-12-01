@@ -12,6 +12,8 @@ import bootstrapIcon from '../../files/techIcons/front-end/bootstrap.png';
 import gitHubIcon from '../../files/techIcons/tools/Github.png';
 import postmanIcon from '../../files/techIcons/tools/postman.webp';
 import gitIcon from '../../files/techIcons/tools/Git.png';
+import vsIcon from '../../files/techIcons/tools/vs.png';
+
 // back-end skills images
 import nodeIcon from '../../files/techIcons/back-end/node.webp';
 import mySQLIcon from '../../files/techIcons/back-end/mysql.png';
@@ -90,6 +92,10 @@ export default function Skills() {
                 <div className={styles.skill}>
                     <img src={gitIcon} alt='Git' />
                     <p>Git</p>
+                </div>
+                <div className={styles.skill}>
+                    <img src={vsIcon} alt='visual studio' />
+                    <p>Visual Studio</p>
                 </div>
             </div>
         </div>
