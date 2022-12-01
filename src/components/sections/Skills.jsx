@@ -17,13 +17,11 @@ import nodeIcon from '../../files/techIcons/back-end/node.webp';
 import mySQLIcon from '../../files/techIcons/back-end/mysql.png';
 import mongoIcon from '../../files/techIcons/back-end/mongodb.png';
 import restIcon from '../../files/techIcons/back-end/rest.png';
-import expressIcon from '../../files/techIcons/back-end/express.png';
 
 export default function Skills() {
-    const [frontSkills, setFrontSkills] = useState(false);
+    const [frontSkills, setFrontSkills] = useState(true);
     const [tools, setTools] = useState(false);
     const [backSkills, setbackSkills] = useState(false);
-    console.log(frontSkills, tools, backSkills);
 
     const toggleFront = () => {
         setFrontSkills(true);
@@ -121,16 +119,33 @@ export default function Skills() {
     );
 
     return (
-        <div className={styles.container} id='skills'>
+        <section>
             <h1>SKILLS</h1>
-            <div className={styles.buttonGroup}>
-                <button onClick={() => toggleFront()}>Front-end</button>
-                <button onClick={() => toggleSkills()}>Tools</button>
-                <button onClick={() => toggleBack()}>Back-end</button>
+            <div className={styles.container} id='skills'>
+                <div className={styles.buttonGroup}>
+                    <button
+                        onClick={() => toggleFront()}
+                        className={frontSkills && styles.buttonClicked}
+                    >
+                        Front-end
+                    </button>
+                    <button
+                        onClick={() => toggleSkills()}
+                        className={tools && styles.buttonClicked}
+                    >
+                        Tools
+                    </button>
+                    <button
+                        onClick={() => toggleBack()}
+                        className={backSkills && styles.buttonClicked}
+                    >
+                        Back-end
+                    </button>
+                </div>
+                {frontSkills && frontOpen}
+                {tools && toolsOpened}
+                {backSkills && backOpened}
             </div>
-            {frontSkills && frontOpen}
-            {tools && toolsOpened}
-            {backSkills && backOpened}
-        </div>
+        </section>
     );
 }
