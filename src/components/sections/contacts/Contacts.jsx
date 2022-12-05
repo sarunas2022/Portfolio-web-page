@@ -2,6 +2,8 @@ import styles from './Contacts.module.scss';
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import emailIcon from '../../../files/email.svg';
+import { BiCheck } from 'react-icons/bi';
+import { BsFillExclamationTriangleFill } from 'react-icons/bs';
 
 export default function Contacts() {
     // use state to store values from input field
@@ -12,7 +14,6 @@ export default function Contacts() {
     });
     // setting error value to state
     const [error, setError] = useState('');
-    console.log(error);
     // Setting input value to useState
     const handleChange = (e) => {
         setValues((values) => ({
@@ -20,7 +21,15 @@ export default function Contacts() {
             [e.target.name]: e.target.value,
         }));
     };
-    useEffect(() => {}, [error]);
+
+    const [status, setStatus] = useState('');
+    useEffect(() => {
+        if (status === 200 || status === 'error') {
+            setTimeout(() => {
+                setStatus('');
+            }, 4000);
+        }
+    }, [status]);
 
     // This function  is used on form submit to send input data to  emailJS
     const sendEmail = async (e) => {
@@ -49,22 +58,42 @@ export default function Contacts() {
             // if all input fields are filled, proceeding with email through emailJS
         } else {
             try {
-                await emailjs.sendForm(
+                const response = await emailjs.sendForm(
                     'service_q8skhcu',
                     'template_21t456c',
                     e.target,
                     '75Is36MYrzkkr0LrL'
                 );
                 // setting input values and errors back to '' to clear input fields after email is successfully sent
-                setValues('');
+                setValues({ user_name: '', user_email: '', message: '' });
+
                 setError('');
+                setStatus(response.status);
             } catch (err) {
                 console.log(err);
+                setStatus('error');
             }
         }
     };
+    // message popup if email was sent
+    const submitMessageOk = (
+        <div className={styles.successMessage}>
+            <p>Your message submitted successfully</p>
+            <BiCheck size='2rem' />
+        </div>
+    );
+    // message popup if email was not sent
+    const submitMessageError = (
+        <div className={styles.errorMessage}>
+            <p>Something went wrong</p>
+            <BsFillExclamationTriangleFill size='2rem' />
+        </div>
+    );
+
     return (
         <section id='contacts' className={styles.contacts}>
+            {status === 200 && submitMessageOk}
+            {!status === 200 && submitMessageError}
             <h1>CONTACT ME</h1>
             <p>Lets get in touch!</p>
             <div className={styles.contactsWrapper}>

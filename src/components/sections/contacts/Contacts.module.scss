@@ -1,4 +1,5 @@
 .contacts {
+    position: relative;
     background: #11998e; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to right,
@@ -11,6 +12,30 @@
         #11998e
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
+    .successMessage {
+        display: flex;
+        gap: 1rem;
+        background-color: rgb(51, 51, 51);
+        align-items: center;
+        color: #38ef7d;
+        opacity: 0.9;
+        position: absolute;
+        bottom: 1rem;
+        right: 0rem;
+        padding: 1rem 2rem;
+    }
+    .errorMessage {
+        display: flex;
+        gap: 1rem;
+        background-color: rgb(51, 51, 51);
+        align-items: center;
+        color: red;
+        opacity: 0.9;
+        position: absolute;
+        bottom: 1rem;
+        right: 0rem;
+        padding: 1rem 2rem;
+    }
     h1 {
         padding: 2rem;
     }
@@ -33,6 +58,9 @@
                     display: block;
                     max-width: 100%;
                 }
+                textarea {
+                    min-height: 8rem;
+                }
                 button {
                     padding: 1rem 1rem;
                     width: 5rem;
@@ -54,7 +82,7 @@
             gap: 2rem;
             padding: 2rem;
             .contactsForm {
-                flex: 2;
+                flex: 1;
                 flex-grow: none;
                 form {
                     input,
@@ -64,7 +92,7 @@
                 }
             }
             .contactsImage {
-                width: 100%;
+                // width: 100%;
                 flex: 1;
                 img {
                     width: 20rem;
