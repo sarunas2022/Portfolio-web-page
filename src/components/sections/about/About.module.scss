@@ -1,0 +1,33 @@
+.about {
+    .wrapper {
+        display: flex;
+        padding: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+        .illustration {
+            img {
+                width: 23rem;
+            }
+        }
+        .aboutMe {
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .about {
+        .wrapper {
+            flex-direction: row;
+            gap: 2rem;
+            .illustration {
+                flex: 1;
+                img {
+                    width: 25rem;
+                }
+            }
+            .aboutMe {
+                flex: 1;
+            }
+        }
+    }
+}
