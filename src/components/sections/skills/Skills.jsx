@@ -125,9 +125,9 @@ export default function Skills() {
     );
 
     return (
-        <section>
+        <section id='skills'>
             <h1>SKILLS</h1>
-            <div className={styles.container} id='skills'>
+            <div className={styles.container}>
                 <div className={styles.buttonGroup}>
                     <button
                         onClick={() => toggleFront()}
