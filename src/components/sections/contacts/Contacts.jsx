@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import emailIcon from '../../../files/email.svg';
 import { BiCheck } from 'react-icons/bi';
 import { BsFillExclamationTriangleFill } from 'react-icons/bs';
+import { CircularProgress } from '@mui/material';
 
 export default function Contacts() {
     // use state to store values from input field
@@ -21,13 +22,14 @@ export default function Contacts() {
             [e.target.name]: e.target.value,
         }));
     };
-
-    const [status, setStatus] = useState('');
+    // status state for form submit
+    const [status, setStatus] = useState('idle');
+    // use effect with 3 sec timeout to change status back to Idle, it makes  success or error message disapear
     useEffect(() => {
-        if (status === 200 || status === 'error') {
+        if (status === 'fulfilled' || status === 'rejected') {
             setTimeout(() => {
-                setStatus('');
-            }, 4000);
+                setStatus('idle');
+            }, 3000);
         }
     }, [status]);
 
@@ -57,8 +59,9 @@ export default function Contacts() {
             }
             // if all input fields are filled, proceeding with email through emailJS
         } else {
+            setStatus('loading');
             try {
-                const response = await emailjs.sendForm(
+                await emailjs.sendForm(
                     'service_q8skhcu',
                     'template_21t456c',
                     e.target,
@@ -68,13 +71,20 @@ export default function Contacts() {
                 setValues({ user_name: '', user_email: '', message: '' });
 
                 setError('');
-                setStatus(response.status);
+                setStatus('fulfilled');
             } catch (err) {
                 console.log(err);
-                setStatus('error');
+                setStatus('rejected');
             }
         }
     };
+    // loader display while message is not sent
+    const submitLoading = (
+        <div className={styles.loader}>
+            <CircularProgress />
+        </div>
+    );
+
     // message popup if email was sent
     const submitMessageOk = (
         <div className={styles.successMessage}>
@@ -92,8 +102,12 @@ export default function Contacts() {
 
     return (
         <section id='contacts' className={styles.contacts}>
-            {status === 200 && submitMessageOk}
-            {!status === 200 && submitMessageError}
+            {/* if status loading loader icon is displayed */}
+            {status === 'loading' && submitLoading}
+            {/* if status fulfilled message pop up */}
+            {status === 'fulfilled' && submitMessageOk}
+            {/* if status rejected error message pop up */}
+            {status === 'rejected' && submitMessageError}
             <h1>CONTACT ME</h1>
             <p>Lets get in touch!</p>
             <div className={styles.contactsWrapper}>

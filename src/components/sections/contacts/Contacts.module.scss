@@ -12,6 +12,12 @@
         #11998e
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
+    .loader {
+        position: absolute;
+        left: 48%;
+        bottom: 50%;
+        color: rgb(51, 51, 51);
+    }
     .successMessage {
         display: flex;
         gap: 1rem;
