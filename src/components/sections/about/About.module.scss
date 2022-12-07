@@ -12,6 +12,9 @@
         }
         .aboutMe {
             width: 100%;
+            p {
+                padding: 0.5rem;
+            }
         }
     }
 }
@@ -22,7 +25,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            gap: 2rem;
+            gap: 4rem;
             .illustration {
                 flex: 1;
                 img {
@@ -31,6 +34,9 @@
             }
             .aboutMe {
                 flex: 1;
+                text-align: left;
+                p {
+                }
             }
         }
     }
