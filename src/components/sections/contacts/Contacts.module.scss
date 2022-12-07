@@ -66,6 +66,7 @@
                 }
                 textarea {
                     min-height: 8rem;
+                    resize: vertical;
                 }
                 button {
                     padding: 1rem 1rem;
@@ -89,19 +90,19 @@
             padding: 2rem;
             .contactsForm {
                 flex: 1;
-                flex-grow: none;
-                form {
-                    input,
-                    textarea {
-                        max-width: 55rem;
-                    }
-                }
+                // form {
+                //     input,
+                //     textarea {
+                //         resize: vertical;
+                //     }
+                // }
             }
             .contactsImage {
                 // width: 100%;
                 flex: 1;
                 img {
-                    width: 20rem;
+                    width: 100%;
+                    max-width: 25rem;
                 }
             }
         }
