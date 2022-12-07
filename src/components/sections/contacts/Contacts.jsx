@@ -108,7 +108,7 @@ export default function Contacts() {
             {status === 'fulfilled' && submitMessageOk}
             {/* if status rejected error message pop up */}
             {status === 'rejected' && submitMessageError}
-            <h1>CONTACT ME</h1>
+            <h1>CONTACT</h1>
             <p>Lets get in touch!</p>
             <div className={styles.contactsWrapper}>
                 <div className={styles.contactsForm}>

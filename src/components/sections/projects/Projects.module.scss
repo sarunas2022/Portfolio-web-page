@@ -1,0 +1,40 @@
+.projects {
+    background: #11998e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #38ef7d,
+        #11998e
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #38ef7d,
+        #11998e
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    padding-top: 3rem;
+    .wrapper {
+        .project {
+            .description {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 2rem 0;
+                h2 {
+                    padding-bottom: 2rem;
+                }
+                p {
+                    padding-bottom: 1rem;
+                }
+            }
+            .visualization {
+                padding-bottom: 2rem;
+                .projectButtons {
+                    padding-top: 0.5rem;
+                    button {
+                        padding: 0.5rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
