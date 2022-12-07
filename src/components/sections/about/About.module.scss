@@ -5,11 +5,13 @@
         flex-direction: column;
         gap: 2rem;
         .illustration {
+            width: 100%;
             img {
-                width: 23rem;
+                width: 100%;
             }
         }
         .aboutMe {
+            width: 100%;
         }
     }
 }
@@ -18,11 +20,13 @@
     .about {
         .wrapper {
             flex-direction: row;
+            align-items: center;
+            justify-content: center;
             gap: 2rem;
             .illustration {
                 flex: 1;
                 img {
-                    width: 25rem;
+                    width: 100%;
                 }
             }
             .aboutMe {
