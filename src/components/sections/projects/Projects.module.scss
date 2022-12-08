@@ -13,6 +13,7 @@
     color: white;
     padding-top: 3rem;
     .wrapper {
+        padding: 2rem;
         .project {
             .description {
                 display: flex;
@@ -33,6 +34,23 @@
                     button {
                         padding: 0.5rem 1rem;
                     }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 48rem) {
+    .projects {
+        .wrapper {
+            .project {
+                padding-top: 2rem;
+                display: flex;
+                gap: 2rem;
+                .description {
+                    flex: 1;
+                }
+                .visualization {
+                    flex: 1;
                 }
             }
         }
