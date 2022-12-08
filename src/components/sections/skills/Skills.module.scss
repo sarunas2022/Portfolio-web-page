@@ -1,4 +1,4 @@
-section {
+.skills {
     text-align: center;
     padding: 2rem;
     .container {
@@ -57,7 +57,7 @@ section {
     color: white;
 }
 @media (min-width: 48rem) {
-    section {
+    .skills {
         .container {
             flex-direction: row;
             padding: 0rem;

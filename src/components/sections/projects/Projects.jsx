@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Projects.module.scss';
+import NFTLandingPage from './NFTLandingPage';
 
 export default function Projects() {
     return (
@@ -20,6 +21,7 @@ export default function Projects() {
                         </div>
                     </div>
                 </div>
+                <NFTLandingPage />
             </div>
         </section>
     );
