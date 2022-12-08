@@ -125,7 +125,7 @@ export default function Skills() {
     );
 
     return (
-        <section id='skills'>
+        <section id='skills' className={styles.skills}>
             <h1>SKILLS</h1>
             <div className={styles.container}>
                 <div className={styles.buttonGroup}>
