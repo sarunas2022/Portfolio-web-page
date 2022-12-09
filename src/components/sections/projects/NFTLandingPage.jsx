@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Projects.module.scss';
-import projectImage from './../../../files/projectsImages/PageReplica/tabletVersion.png';
+import projectImage from './../../../files/projectsImages/PageReplica/dekstopversion.png';
 
 export default function NFTLandingPage() {
     return (

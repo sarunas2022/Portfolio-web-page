@@ -33,10 +33,12 @@
                     }
                     .technologies {
                         display: flex;
+                        flex-wrap: wrap;
                         gap: 1rem;
-                        p {
-                            padding-bottom: 1rem;
-                        }
+                        padding-bottom: 1rem;
+                    }
+                    p {
+                        padding-bottom: 1rem;
                     }
                     .projectButtons {
                         padding-top: 1rem;
@@ -68,6 +70,7 @@
             .project {
                 padding-top: 2rem;
                 flex-direction: row;
+                align-items: center;
                 gap: 2rem;
                 .textWrapper {
                     flex: 1;
