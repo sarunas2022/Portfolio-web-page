@@ -36,6 +36,9 @@
                         flex-wrap: wrap;
                         gap: 1rem;
                         padding-bottom: 1rem;
+                        p {
+                            padding: 0;
+                        }
                     }
                     p {
                         padding-bottom: 1rem;
@@ -79,6 +82,9 @@
                 }
                 .visualization {
                     flex: 1;
+                    img {
+                        max-width: 35rem;
+                    }
                 }
             }
         }
