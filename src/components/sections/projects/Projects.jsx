@@ -3,6 +3,7 @@ import styles from './Projects.module.scss';
 import NFTLandingPage from './NFTLandingPage';
 import SplitBills from './SplitBills';
 import WeatherMaps from './WeatherMaps';
+import EventsApp from './EventsApp';
 
 export default function Projects() {
     return (
@@ -10,6 +11,7 @@ export default function Projects() {
             <h1>PROJECTS</h1>
             <div className={styles.wrapper}>
                 <WeatherMaps />
+                <EventsApp />
                 <SplitBills />
                 <NFTLandingPage />
             </div>
