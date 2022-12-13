@@ -21,10 +21,12 @@ import mongoIcon from '../../../files/techIcons/back-end/mongodb.png';
 import restIcon from '../../../files/techIcons/back-end/rest.png';
 
 export default function Skills() {
+    // states
     const [frontSkills, setFrontSkills] = useState(true);
     const [tools, setTools] = useState(false);
     const [backSkills, setbackSkills] = useState(false);
 
+    // switching between states to show chosen skills
     const toggleFront = () => {
         setFrontSkills(true);
         setTools(false);
@@ -41,7 +43,7 @@ export default function Skills() {
         setTools(false);
         setbackSkills(true);
     };
-
+    // front-end skills container
     const frontOpen = (
         <div className={styles.wrapper}>
             <h1>Front-End</h1>
@@ -77,6 +79,7 @@ export default function Skills() {
             </div>
         </div>
     );
+    //  Tool skills container
     const toolsOpened = (
         <div className={styles.wrapper}>
             <h1>Tools</h1>
@@ -100,6 +103,7 @@ export default function Skills() {
             </div>
         </div>
     );
+    // back-end skills container
     const backOpened = (
         <div className={styles.wrapper}>
             <h1>Back-end</h1>
