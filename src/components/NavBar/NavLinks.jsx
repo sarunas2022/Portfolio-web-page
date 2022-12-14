@@ -9,8 +9,9 @@ export default function NavLinks(props) {
     return (
         <motion.ul
             className={styles.links}
-            initial={{ x: -40 }}
+            initial={{ x: 200 }}
             animate={{ x: 0 }}
+            transition={{ duration: 0.3 }}
         >
             <motion.li
                 initial={animateFrom}
