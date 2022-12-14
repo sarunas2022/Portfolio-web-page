@@ -6,6 +6,7 @@ import { BiCheck } from 'react-icons/bi';
 import { BsFillExclamationTriangleFill } from 'react-icons/bs';
 import { CircularProgress } from '@mui/material';
 import { motion } from 'framer-motion';
+import ProjectButton from './../../buttons/ProjectButtons';
 
 export default function Contacts() {
     // use state to store values from input field
@@ -156,9 +157,11 @@ export default function Contacts() {
                                     : 'Message'
                             }
                         />
-                        <button type='submit' value='Send'>
-                            Submit
-                        </button>
+                        <ProjectButton
+                            text='Submit'
+                            type='submit'
+                            value='Send'
+                        />
                     </form>
                 </div>
                 <div className={styles.contactsImage}>

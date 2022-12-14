@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Projects.module.scss';
 import projectImage from './../../../files/projectsImages/splitBills/splitBills.png';
+import ProjectButton from './../../buttons/ProjectButtons';
 
 export default function SplitBills() {
     return (
@@ -39,10 +40,10 @@ export default function SplitBills() {
                             rel='noreferrer'
                             href='https://github.com/sarunas2022/Project-Split-Bills'
                         >
-                            <button>View source code</button>
+                            <ProjectButton text='View source code' />
                         </a>
                         <a target='_blank' rel='noreferrer' href='#'>
-                            <button>Visit the website</button>
+                            <ProjectButton text='Visit the website' />
                         </a>
                     </div>
                 </div>
