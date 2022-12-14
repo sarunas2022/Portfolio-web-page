@@ -5,6 +5,7 @@ import emailIcon from '../../../files/email.svg';
 import { BiCheck } from 'react-icons/bi';
 import { BsFillExclamationTriangleFill } from 'react-icons/bs';
 import { CircularProgress } from '@mui/material';
+import { motion } from 'framer-motion';
 
 export default function Contacts() {
     // use state to store values from input field
@@ -87,17 +88,27 @@ export default function Contacts() {
 
     // message popup if email was sent
     const submitMessageOk = (
-        <div className={styles.successMessage}>
+        <motion.div
+            className={styles.successMessage}
+            initial={{ opacity: 0, x: 1000 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+        >
             <p>Your message submitted successfully</p>
             <BiCheck size='2rem' />
-        </div>
+        </motion.div>
     );
     // message popup if email was not sent
     const submitMessageError = (
-        <div className={styles.errorMessage}>
+        <motion.div
+            className={styles.errorMessage}
+            initial={{ opacity: 0, x: 1000 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+        >
             <p>Something went wrong</p>
             <BsFillExclamationTriangleFill size='2rem' />
-        </div>
+        </motion.div>
     );
 
     return (
