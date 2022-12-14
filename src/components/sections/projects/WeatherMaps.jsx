@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Projects.module.scss';
 import projectImage from './../../../files/projectsImages/weatherMaps/WeatherMapsApp.png';
+import ProjectButton from './../../buttons/ProjectButtons';
 
 export default function WeatherMaps() {
     return (
@@ -37,10 +38,10 @@ export default function WeatherMaps() {
                             rel='noreferrer'
                             href='https://github.com/sarunas2022/Weather_app'
                         >
-                            <button>View source code</button>
+                            <ProjectButton text='View source code' />
                         </a>
                         <a target='_blank' rel='noreferrer' href='#'>
-                            <button>Visit the website</button>
+                            <ProjectButton text='Visit the website' />
                         </a>
                     </div>
                 </div>

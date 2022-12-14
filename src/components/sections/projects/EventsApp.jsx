@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Projects.module.scss';
 import projectImage from './../../../files/projectsImages/eventsApp/events.png';
+import ProjectButton from './../../buttons/ProjectButtons';
 
 export default function EventsApp() {
     return (
@@ -38,10 +39,10 @@ export default function EventsApp() {
                             rel='noreferrer'
                             href='https://github.com/sarunas2022/React-app-Events'
                         >
-                            <button>View source code</button>
+                            <ProjectButton text='View source code' />
                         </a>
                         <a target='_blank' rel='noreferrer' href='#'>
-                            <button>Visit the website</button>
+                            <ProjectButton text='Visit the website' />
                         </a>
                     </div>
                 </div>
