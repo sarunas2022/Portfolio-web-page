@@ -30,7 +30,7 @@ export default function Contacts() {
         if (status === 'fulfilled' || status === 'rejected') {
             setTimeout(() => {
                 setStatus('idle');
-            }, 3000);
+            }, 4000);
         }
     }, [status]);
 

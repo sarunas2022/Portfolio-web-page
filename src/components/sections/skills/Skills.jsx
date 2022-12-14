@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Skills.module.scss';
+import { motion } from 'framer-motion';
 // front-end skills images
 import htmlIcon from '../../../files/techIcons/front-end/html.png';
 import cssIcon from '../../../files/techIcons/front-end/css.svg';
@@ -43,9 +44,17 @@ export default function Skills() {
         setTools(false);
         setbackSkills(true);
     };
+
+    // animation styles for skills
+    const animateFrom = { opacity: 0, y: -40 };
+    const animateTo = { opacity: 1, y: 0 };
     // front-end skills container
     const frontOpen = (
-        <div className={styles.wrapper}>
+        <motion.div
+            className={styles.wrapper}
+            initial={animateFrom}
+            animate={animateTo}
+        >
             <h1>Front-End</h1>
             <div className={styles.skillsBox}>
                 <div className={styles.skill}>
@@ -77,11 +86,15 @@ export default function Skills() {
                     <p>Bootstrap</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
     //  Tool skills container
     const toolsOpened = (
-        <div className={styles.wrapper}>
+        <motion.div
+            className={styles.wrapper}
+            initial={animateFrom}
+            animate={animateTo}
+        >
             <h1>Tools</h1>
             <div className={styles.skillsBox}>
                 <div className={styles.skill}>
@@ -101,11 +114,15 @@ export default function Skills() {
                     <p>Visual Studio</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
     // back-end skills container
     const backOpened = (
-        <div className={styles.wrapper}>
+        <motion.div
+            className={styles.wrapper}
+            initial={animateFrom}
+            animate={animateTo}
+        >
             <h1>Back-end</h1>
             <div className={styles.skillsBox}>
                 <div className={styles.skill}>
@@ -125,7 +142,7 @@ export default function Skills() {
                     <p>RESTful API</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 
     return (
