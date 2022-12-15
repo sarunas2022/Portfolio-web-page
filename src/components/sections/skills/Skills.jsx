@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styles from './Skills.module.scss';
 import { motion } from 'framer-motion';
+import SkillsButton from './../../buttons/SkillsButton';
+
 // front-end skills images
 import htmlIcon from '../../../files/techIcons/front-end/html.png';
 import cssIcon from '../../../files/techIcons/front-end/css.svg';
@@ -26,6 +28,7 @@ export default function Skills() {
     const [frontSkills, setFrontSkills] = useState(true);
     const [tools, setTools] = useState(false);
     const [backSkills, setbackSkills] = useState(false);
+    console.log(frontSkills);
 
     // switching between states to show chosen skills
     const toggleFront = () => {
@@ -150,24 +153,21 @@ export default function Skills() {
             <h1>SKILLS</h1>
             <div className={styles.container}>
                 <div className={styles.buttonGroup}>
-                    <button
-                        onClick={() => toggleFront()}
-                        className={frontSkills && styles.buttonClicked}
-                    >
-                        Front-end
-                    </button>
-                    <button
-                        onClick={() => toggleSkills()}
-                        className={tools && styles.buttonClicked}
-                    >
-                        Tools
-                    </button>
-                    <button
-                        onClick={() => toggleBack()}
-                        className={backSkills && styles.buttonClicked}
-                    >
-                        Back-end
-                    </button>
+                    <SkillsButton
+                        text='Front-end'
+                        styling={frontSkills ? 'buttonClicked' : 'skillsButton'}
+                        toggle={toggleFront}
+                    ></SkillsButton>
+                    <SkillsButton
+                        text='Tools'
+                        styling={tools ? 'buttonClicked' : 'skillsButton'}
+                        toggle={toggleSkills}
+                    ></SkillsButton>
+                    <SkillsButton
+                        text='Back-end'
+                        styling={backSkills ? 'buttonClicked' : 'skillsButton'}
+                        toggle={toggleBack}
+                    ></SkillsButton>
                 </div>
                 {frontSkills && frontOpen}
                 {tools && toolsOpened}

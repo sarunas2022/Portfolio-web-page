@@ -1,0 +1,42 @@
+.projectButton {
+    padding: 0.5rem 1rem;
+    font-weight: bolder;
+    border: 0.2rem solid white;
+    color: White;
+    background-color: transparent;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.projectButtonDark {
+    padding: 0.5rem 1rem;
+    font-weight: bolder;
+    border: 0.2rem solid rgb(52, 229, 127);
+    color: rgb(52, 229, 127);
+    background-color: transparent;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.skillsButton {
+    padding: 0.5rem 1rem;
+    border: 0.2rem solid #11998e;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+.buttonClicked {
+    background: #11998e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #38ef7d,
+        #11998e
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #38ef7d,
+        #11998e
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-weight: bolder;
+}
