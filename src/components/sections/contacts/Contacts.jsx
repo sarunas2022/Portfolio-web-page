@@ -24,9 +24,10 @@ export default function Contacts() {
             [e.target.name]: e.target.value,
         }));
     };
+    console.log(error);
     // status state for form submit
     const [status, setStatus] = useState('idle');
-    // use effect with 3 sec timeout to change status back to Idle, it makes  success or error message disapear
+    // use effect with 3 sec timeout to change status back to Idle, it makes  success or error message disappear
     useEffect(() => {
         if (status === 'fulfilled' || status === 'rejected') {
             setTimeout(() => {
@@ -34,6 +35,30 @@ export default function Contacts() {
             }, 4000);
         }
     }, [status]);
+
+    // These 3 effects are used for not to display error styling for input fields when user
+    // enters missing data to certain input field, by by removing error state
+
+    useEffect(() => {
+        setError((prev) => ({
+            ...prev,
+            name_error: '',
+        }));
+    }, [values.user_name]);
+
+    useEffect(() => {
+        setError((prev) => ({
+            ...prev,
+            email_error: '',
+        }));
+    }, [values.user_email]);
+
+    useEffect(() => {
+        setError((prev) => ({
+            ...prev,
+            message_error: '',
+        }));
+    }, [values.message]);
 
     // This function  is used on form submit to send input data to  emailJS
     const sendEmail = async (e) => {
@@ -126,6 +151,11 @@ export default function Contacts() {
                 <div className={styles.contactsForm}>
                     <form onSubmit={sendEmail}>
                         <input
+                            className={
+                                error.name_error
+                                    ? styles.inputError
+                                    : styles.input
+                            }
                             // on input changes using function handle change to update state for values
                             onChange={handleChange}
                             // As a value setting a current set value, so after form submit it clears the field
@@ -139,6 +169,11 @@ export default function Contacts() {
                             }
                         />
                         <input
+                            className={
+                                error.email_error
+                                    ? styles.inputError
+                                    : styles.input
+                            }
                             onChange={handleChange}
                             value={values.user_email}
                             type='email'
@@ -148,6 +183,11 @@ export default function Contacts() {
                             }
                         />
                         <textarea
+                            className={
+                                error.message_error
+                                    ? styles.inputError
+                                    : styles.textarea
+                            }
                             value={values.message}
                             onChange={handleChange}
                             name='message'

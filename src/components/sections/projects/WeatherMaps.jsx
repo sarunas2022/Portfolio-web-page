@@ -18,11 +18,12 @@ export default function WeatherMaps() {
                         <p>Axios</p>
                         <p>OpenWeatherMap API</p>
                         <p>JavaScript Geolocation API </p>
+                        <p>Leaflet</p>
                     </div>
 
                     <p>
                         This app is for checking weather anywhere in the world
-                        and it also shows location maps just for fun.
+                        and it also shows map of chosen location just for fun.
                     </p>
                     <p>
                         Weather data is collected using OpenWeatherMap API - it
