@@ -88,7 +88,7 @@
         }
         .contactsImage {
             img {
-                width: 10rem;
+                max-width: 100%;
             }
         }
     }
@@ -97,24 +97,18 @@
     .contacts {
         .contactsWrapper {
             flex-direction: row;
+            justify-content: center;
             align-items: center;
             gap: 2rem;
             padding: 2rem;
             .contactsForm {
                 flex: 1;
-                // form {
-                //     input,
-                //     textarea {
-                //         resize: vertical;
-                //     }
-                // }
             }
             .contactsImage {
-                // width: 100%;
                 flex: 1;
                 img {
                     width: 100%;
-                    max-width: 25rem;
+                    max-width: 30rem;
                 }
             }
         }

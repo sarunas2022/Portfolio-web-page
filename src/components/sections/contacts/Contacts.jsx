@@ -128,7 +128,7 @@ export default function Contacts() {
     const submitMessageError = (
         <motion.div
             className={styles.errorMessage}
-            initial={{ opacity: 0, x: 1000 }}
+            initial={{ opacity: 0, x: '100vw' }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
         >
@@ -201,6 +201,7 @@ export default function Contacts() {
                         />
                         <ProjectButton
                             text='Submit'
+                            styling='projectButton'
                             type='submit'
                             value='Send'
                         />
