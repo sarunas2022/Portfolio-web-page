@@ -169,6 +169,8 @@ export default function Contacts() {
                             }
                         />
                         <input
+                            // here is conditional styling if there is no error its uses default styling,
+                            // and if there is an error in the error state message it applied adjusted styling
                             className={
                                 error.email_error
                                     ? styles.inputError
