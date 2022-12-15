@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function ProjectButtons(props) {
     return (
         <motion.button
-            className={styles.projectButton}
+            className={styles[props.styling]}
             whileHover={{
                 scale: 1.1,
                 backgroundColor: 'white',

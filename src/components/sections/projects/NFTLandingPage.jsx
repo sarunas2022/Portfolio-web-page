@@ -27,14 +27,20 @@ export default function NFTLandingPage() {
                             rel='noreferrer'
                             href='https://github.com/sarunas2022/main-page-replica'
                         >
-                            <ProjectButton text='View source code' />
+                            <ProjectButton
+                                text='View source code'
+                                styling='projectButton'
+                            />
                         </a>
                         <a
                             target='_blank'
                             rel='noreferrer'
                             href='https://sarunas2022.github.io/main-page-replica/'
                         >
-                            <ProjectButton text='Visit the website' />
+                            <ProjectButton
+                                text='Visit the website'
+                                styling='projectButton'
+                            />
                         </a>
                     </div>
                 </div>

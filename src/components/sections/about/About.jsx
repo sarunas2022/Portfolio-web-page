@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './About.module.scss';
 import gamerImage from '../../../files/ninja.svg';
+import ProjectButton from './../../buttons/ProjectButtons';
+import CV from './../../../files/CV.pdf';
 
 export default function About() {
     return (
@@ -32,6 +34,11 @@ export default function About() {
                         can.
                     </p>
                 </div>
+            </div>
+            <div className={styles.resumeButton}>
+                <a href={CV} download='MyCV.pdf'>
+                    <ProjectButton text='Resume' styling='projectButtonDark' />
+                </a>
             </div>
         </section>
     );
