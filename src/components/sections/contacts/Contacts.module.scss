@@ -54,11 +54,14 @@
             display: flex;
             padding-top: 2rem;
             flex-direction: column;
+            align-items: center;
             gap: 2rem;
             form {
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
+                width: 100%;
+                max-width: 35rem;
                 input,
                 textarea {
                     padding: 1rem;
@@ -82,13 +85,14 @@
                     resize: vertical;
                 }
                 button {
-                    width: 5rem;
+                    max-width: 5rem;
                 }
             }
         }
         .contactsImage {
             img {
-                max-width: 100%;
+                width: 100%;
+                max-width: 15rem;
             }
         }
     }
@@ -100,9 +104,14 @@
             justify-content: center;
             align-items: center;
             gap: 2rem;
-            padding: 2rem;
+            padding-top: 4rem;
             .contactsForm {
                 flex: 1;
+                flex-direction: row;
+                justify-content: center;
+                .form {
+                    max-width: 35rem;
+                }
             }
             .contactsImage {
                 flex: 1;
