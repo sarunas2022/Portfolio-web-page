@@ -76,6 +76,7 @@
 
 .container {
     // @include angle(after);
+    padding-top: 2rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -99,14 +100,14 @@
     }
     .photo {
         z-index: 2;
-        width: 25rem;
-        padding: 4rem;
+        max-width: 24rem;
+        padding: 2rem;
         border-radius: 20rem;
     }
     .headerText {
         z-index: 2;
         color: white;
-        padding: 2rem;
+        padding: 0 2rem 2rem 2rem;
         display: flex;
         flex-direction: column;
         h1 {
