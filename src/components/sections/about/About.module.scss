@@ -1,21 +1,36 @@
 .about {
     text-align: center;
+
     padding: 2rem;
     .wrapper {
         display: flex;
-        padding: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 2rem;
         .illustration {
             width: 100%;
             img {
                 width: 100%;
+                max-width: 35rem;
             }
         }
         .aboutMe {
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             p {
-                padding: 0.5rem;
+                width: 100%;
+                max-width: 35rem;
+                padding-bottom: 0.5rem;
+            }
+            .resumeButton {
+                width: 100%;
+                max-width: 35rem;
+                padding-top: 1.5rem;
             }
         }
     }
@@ -25,23 +40,28 @@
     .about {
         .resumeButton {
             text-align: right;
-            padding-right: 2rem;
         }
         .wrapper {
             flex-direction: row;
-            align-items: center;
             justify-content: center;
-            gap: 4rem;
+            align-items: center;
+            gap: 2rem;
+            width: 100%;
             .illustration {
                 flex: 1;
                 img {
                     width: 100%;
+                    max-width: 35rem;
                 }
             }
             .aboutMe {
                 flex: 1;
                 text-align: left;
-                p {
+
+                // text-align: left;
+                padding: {
+                    width: 100%;
+                    max-width: 35rem;
                 }
             }
         }

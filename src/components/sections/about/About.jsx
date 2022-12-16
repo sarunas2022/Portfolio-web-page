@@ -33,12 +33,15 @@ export default function About() {
                         time with friends and family and traveling whenever I
                         can.
                     </p>
+                    <div className={styles.resumeButton}>
+                        <a href={CV} download='MyCV.pdf'>
+                            <ProjectButton
+                                text='Resume'
+                                styling='projectButtonDark'
+                            />
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div className={styles.resumeButton}>
-                <a href={CV} download='MyCV.pdf'>
-                    <ProjectButton text='Resume' styling='projectButtonDark' />
-                </a>
             </div>
         </section>
     );
