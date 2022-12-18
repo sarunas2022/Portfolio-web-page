@@ -16,10 +16,10 @@ export default function NFTLandingPage() {
 
                     <p>
                         This is one of my first projects. the goal was to create
-                        responsive page replica using mobile first approach.
-                        Only HTML and CSS used. Focus was on responsiveness and
-                        testing HTML and CSS knowledge so links and buttons not
-                        suppose to work.
+                        responsive page replica using a mobile-first approach.
+                        Only HTML and CSS are used. The focus was on
+                        responsiveness and testing HTML and CSS knowledge so
+                        links and buttons not suppose to work.
                     </p>
                     <div className={styles.projectButtons}>
                         <a

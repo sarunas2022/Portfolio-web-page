@@ -22,16 +22,17 @@ export default function WeatherMaps() {
                     </div>
 
                     <p>
-                        This app is for checking weather anywhere in the world
-                        and it also shows map of chosen location just for fun.
+                        This app is for checking the weather anywhere in the
+                        world and it also shows the map of chosen location just
+                        for fun.
                     </p>
                     <p>
                         Weather data is collected using OpenWeatherMap API - it
-                        gets data in back-end using axios. For embedded maps I
-                        used openSource React leaflet maps library. I also
-                        integrated geolocation, so if user opens the app and
-                        agrees to show his location, app displays maps and
-                        weather data for current locations.
+                        gets data in the back-end using Axios. For embedded maps
+                        I used the openSource React leaflet maps library. I also
+                        integrated geolocation, so if a user opens the app and
+                        agrees to show his location, the app displays maps and
+                        weather data for the current location.
                     </p>
                     <div className={styles.projectButtons}>
                         <a
