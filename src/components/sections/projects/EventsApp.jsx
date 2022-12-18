@@ -19,19 +19,20 @@ export default function EventsApp() {
                     </div>
 
                     <p>
-                        This app was my final projects for Code Academy course.
-                        It consists of 3 parts - database, server and client.
-                        The purpose of the app is to allow companies engaged in
-                        the organization of events to register new events and
-                        add/edit/delete guest of particular event.
+                        This app was my final project for the Code Academy
+                        course. It consists of 3 parts - database, server, and
+                        client. The purpose of the app is to allow companies
+                        engaged in the organization of events to register new
+                        events and add/edit/delete guests of the particular
+                        event.
                     </p>
                     <p>
-                        All CRUD operations where used and data is saved in
-                        database. It also has registration and login page with
-                        back-end authentication/authorization in server side
-                        using JWT token, passwords are saved in database hashed
-                        with BCRIPT, form validation using JOI and for routing
-                        EXPRESS npm package was used.
+                        All CRUD operations were used and data is saved in
+                        database. It also has a registration and login page with
+                        back-end authentication/authorization on the server side
+                        using the JWT token, passwords are saved in the database
+                        hashed with BCRIPT, form validation using JOI, and for
+                        routing EXPRESS npm package was used.
                     </p>
                     <div className={styles.projectButtons}>
                         <a

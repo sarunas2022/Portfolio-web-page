@@ -19,20 +19,20 @@ export default function SplitBills() {
                     </div>
 
                     <p>
-                        This is simple system that allows registered users to
-                        join groups and share bills. The system consists of 3
-                        parts - database, server and client.
+                        This simple system allows registered users to join
+                        groups and share bills. The system consists of 3 parts -
+                        database, server, and client.
                     </p>
                     <p>
-                        It has registration and login page with back-end
-                        authentication/authorization in server side using JWT
-                        token, passwords are saved in Database hashed with
-                        BCRIPT npm package, form validation using JOI npm
+                        It has a registration and a login page with a back-end
+                        authentication/authorization on the server side using
+                        JWT token, passwords are saved in the database hashed
+                        with BCRIPT npm package, form validation using JOI npm
                         package. For routing express npm package was used.
                     </p>
                     <p>
-                        Main attention here was put on back-end part, so just
-                        minimal styling was added.
+                        Primary attention here was put on the back-end part, so
+                        just minimal styling was added.
                     </p>
                     <div className={styles.projectButtons}>
                         <a
