@@ -21,7 +21,6 @@
         }
         .wrapper {
             flex: 1;
-            padding-top: 2rem;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -53,7 +52,7 @@
             min-height: 52vh;
 
             flex-direction: row;
-            padding: 0rem;
+            padding-top: 2rem;
             justify-content: center;
             align-items: center;
             .buttonGroup {

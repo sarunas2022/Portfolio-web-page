@@ -5,7 +5,13 @@
     scroll-margin-top: 3rem;
     font-family: 'roboto', sans-serif;
 }
-.main {
-    overflow-x: hidden;
-    overflow-y: hidden;
+.projectsContainer {
+    background-color: #fff;
+    max-width: 1920px;
+    box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    .main {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 }
