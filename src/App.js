@@ -9,7 +9,7 @@ import Projects from './components/sections/projects/Projects';
 
 function App() {
     return (
-        <div>
+        <div className='projectsContainer'>
             <NavBar />
             <div className='main'>
                 <Header />
