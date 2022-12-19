@@ -39,8 +39,8 @@
                         padding-bottom: 1rem;
                         p {
                             border: 0.1rem solid white;
-                            padding: 0.5rem;
-                            font-size: small;
+                            padding: 0.3rem;
+                            font-size: smaller;
                             background-color: transparent;
                             opacity: 0.8;
                             font-weight: bolder;
@@ -53,6 +53,12 @@
                         padding-top: 1rem;
                         display: flex;
                         gap: 1rem;
+                        a {
+                            text-decoration: none;
+                            button {
+                                padding: 0.5rem 0.5rem;
+                            }
+                        }
                     }
                 }
             }
@@ -84,6 +90,18 @@
                 .textWrapper {
                     flex: 1;
                     .description {
+                        .technologies {
+                            p {
+                                padding: 0.5rem;
+                            }
+                        }
+                        .projectButtons {
+                            a {
+                                button {
+                                    padding: 0.5rem 1rem;
+                                }
+                            }
+                        }
                     }
                 }
                 .visualization {
