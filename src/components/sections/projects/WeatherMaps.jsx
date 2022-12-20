@@ -45,7 +45,11 @@ export default function WeatherMaps() {
                                 styling='projectButton'
                             />
                         </a>
-                        <a target='_blank' rel='noreferrer' href='#'>
+                        <a
+                            target='_blank'
+                            rel='noreferrer'
+                            href='https://sgrab-weather-maps.herokuapp.com'
+                        >
                             <ProjectButton
                                 text='Visit the website'
                                 styling='projectButton'
