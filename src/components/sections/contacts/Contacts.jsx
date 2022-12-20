@@ -24,7 +24,6 @@ export default function Contacts() {
             [e.target.name]: e.target.value,
         }));
     };
-    console.log(error);
     // status state for form submit
     const [status, setStatus] = useState('idle');
     // use effect with 3 sec timeout to change status back to Idle, it makes  success or error message disappear
@@ -100,7 +99,6 @@ export default function Contacts() {
                 setError('');
                 setStatus('fulfilled');
             } catch (err) {
-                console.log(err);
                 setStatus('rejected');
             }
         }

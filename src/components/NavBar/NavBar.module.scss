@@ -1,12 +1,12 @@
 .navbar {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 3;
     .navigation {
         display: none;
     }
     .mobileNav {
-        position: relative;
         width: 100%;
         background-color: rgb(51, 51, 51);
         padding: 2.1rem;
@@ -45,8 +45,8 @@
 }
 @media (min-width: 48rem) {
     .navbar {
+        position: sticky;
         .navigation {
-            position: relative;
             width: 100%;
             background-color: rgb(51, 51, 51);
             padding: 1.5rem 2rem;
