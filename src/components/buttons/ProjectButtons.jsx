@@ -8,7 +8,7 @@ export default function ProjectButtons(props) {
             className={styles[props.styling]}
             whileHover={{
                 scale: 1.1,
-                backgroundColor: 'white',
+                backgroundColor: 'rgb(255,255,255)',
                 color: 'rgb(52, 229, 127)',
             }}
             transition={{ duration: 0.5 }}

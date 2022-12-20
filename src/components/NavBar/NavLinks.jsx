@@ -11,12 +11,12 @@ export default function NavLinks(props) {
             className={styles.links}
             initial={{ x: '100vw' }}
             animate={{ x: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.2 }}
         >
             <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.3 }}
+                transition={{ delay: 0.2 }}
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
                 <a href='#home'>Home</a>
@@ -24,7 +24,7 @@ export default function NavLinks(props) {
             <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.4 }}
+                transition={{ delay: 0.3 }}
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
                 <a href='#skills'>Skills</a>
@@ -32,7 +32,7 @@ export default function NavLinks(props) {
             <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.5 }}
+                transition={{ delay: 0.4 }}
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
                 <a href='#projects'>Latest work</a>
@@ -40,7 +40,7 @@ export default function NavLinks(props) {
             <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.6 }}
+                transition={{ delay: 0.5 }}
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
                 <a href='#about'>About me</a>
@@ -48,7 +48,7 @@ export default function NavLinks(props) {
             <motion.li
                 initial={animateFrom}
                 animate={animateTo}
-                transition={{ delay: 0.7 }}
+                transition={{ delay: 0.6 }}
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
                 <a href='#contacts'>Contact me</a>

@@ -28,7 +28,6 @@ export default function Skills() {
     const [frontSkills, setFrontSkills] = useState(true);
     const [tools, setTools] = useState(false);
     const [backSkills, setbackSkills] = useState(false);
-    console.log(frontSkills);
 
     // switching between states to show chosen skills
     const toggleFront = () => {
