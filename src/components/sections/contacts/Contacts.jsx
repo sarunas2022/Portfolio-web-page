@@ -106,7 +106,7 @@ export default function Contacts() {
     // loader display while message is not sent
     const submitLoading = (
         <div className={styles.loader}>
-            <CircularProgress />
+            <CircularProgress sx={{ color: 'rgb(51, 51, 51)' }} />
         </div>
     );
 

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Projects.module.scss';
 import projectImage from './../../../files/projectsImages/weatherMaps/WeatherMapsApp.png';
 import ProjectButton from './../../buttons/ProjectButtons';
+import { motion } from 'framer-motion';
 
 export default function WeatherMaps() {
     return (
@@ -16,15 +17,14 @@ export default function WeatherMaps() {
                         <p>NodeJS</p>
                         <p>ExpressJS</p>
                         <p>Axios</p>
+                        <p>Leaflet</p>
                         <p>OpenWeatherMap API</p>
                         <p>JavaScript Geolocation API </p>
-                        <p>Leaflet</p>
                     </div>
 
                     <p>
                         This app is for checking the weather anywhere in the
-                        world and it also shows the map of chosen location just
-                        for fun.
+                        world and it also shows the map of chosen location.
                     </p>
                     <p>
                         Weather data is collected using OpenWeatherMap API - it
@@ -45,7 +45,11 @@ export default function WeatherMaps() {
                                 styling='projectButton'
                             />
                         </a>
-                        <a target='_blank' rel='noreferrer' href='#'>
+                        <a
+                            target='_blank'
+                            rel='noreferrer'
+                            href='https://sgrab-weather-maps.herokuapp.com'
+                        >
                             <ProjectButton
                                 text='Visit the website'
                                 styling='projectButton'
@@ -56,7 +60,12 @@ export default function WeatherMaps() {
             </div>
 
             <div className={styles.visualization}>
-                <img src={projectImage} alt='img' />
+                <motion.img
+                    src={projectImage}
+                    alt='img'
+                    whileHover={{ scale: 1.15 }}
+                    transition={{ duration: 0.3 }}
+                />
             </div>
         </div>
     );

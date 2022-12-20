@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Projects.module.scss';
 import projectImage from './../../../files/projectsImages/splitBills/splitBills.png';
 import ProjectButton from './../../buttons/ProjectButtons';
+import { motion } from 'framer-motion';
 
 export default function SplitBills() {
     return (
@@ -56,7 +57,12 @@ export default function SplitBills() {
             </div>
 
             <div className={styles.visualization}>
-                <img src={projectImage} alt='img' />
+                <motion.img
+                    src={projectImage}
+                    alt='img'
+                    whileHover={{ scale: 1.15 }}
+                    transition={{ duration: 0.3 }}
+                />
             </div>
         </div>
     );
