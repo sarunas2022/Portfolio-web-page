@@ -15,9 +15,11 @@
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
     .loader {
-        position: absolute;
-        left: 48%;
-        bottom: 50%;
+        // here is styling to make loader in a middle of visible screen
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
     .successMessage {
         display: flex;
