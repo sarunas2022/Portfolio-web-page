@@ -11,11 +11,14 @@ import reactIcon from '../../../files/techIcons/front-end/react-icon.png';
 import sassIcon from '../../../files/techIcons/front-end/sass.png';
 import muiIcon from '../../../files/techIcons/front-end/mui.png';
 import bootstrapIcon from '../../../files/techIcons/front-end/bootstrap.png';
+import framer from '../../../files/techIcons/front-end/framer-motion.png';
+
 // tool skills images
 import gitHubIcon from '../../../files/techIcons/tools/Github.png';
 import postmanIcon from '../../../files/techIcons/tools/postman.webp';
 import gitIcon from '../../../files/techIcons/tools/Git.png';
 import vsIcon from '../../../files/techIcons/tools/vs.png';
+import herokuIcon from '../../../files/techIcons/tools/heroku.png';
 
 // back-end skills images
 import nodeIcon from '../../../files/techIcons/back-end/node.webp';
@@ -87,6 +90,10 @@ export default function Skills() {
                     <img src={bootstrapIcon} alt='Bootstrap' />
                     <p>Bootstrap</p>
                 </div>
+                <div className={styles.skill}>
+                    <img src={framer} alt='framer-motion' />
+                    <p>Framer-motion</p>
+                </div>
             </div>
         </motion.div>
     );
@@ -114,6 +121,10 @@ export default function Skills() {
                 <div className={styles.skill}>
                     <img src={vsIcon} alt='visual studio' />
                     <p>Visual Studio</p>
+                </div>
+                <div className={styles.skill}>
+                    <img src={herokuIcon} alt='heroku' />
+                    <p>Heroku</p>
                 </div>
             </div>
         </motion.div>

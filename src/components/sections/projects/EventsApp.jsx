@@ -46,7 +46,11 @@ export default function EventsApp() {
                                 styling='projectButton'
                             />
                         </a>
-                        <a target='_blank' rel='noreferrer' href='#'>
+                        <a
+                            target='_blank'
+                            rel='noreferrer'
+                            href='https://sgrab-events.herokuapp.com'
+                        >
                             <ProjectButton
                                 text='Visit the website'
                                 styling='projectButton'
