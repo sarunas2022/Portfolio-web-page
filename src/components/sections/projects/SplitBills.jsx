@@ -46,12 +46,12 @@ export default function SplitBills() {
                                 styling='projectButton'
                             />
                         </a>
-                        <a target='_blank' rel='noreferrer' href='#'>
+                        {/* <a target='_blank' rel='noreferrer' href='#'>
                             <ProjectButton
                                 text='Visit the website'
                                 styling='projectButton'
                             />
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
