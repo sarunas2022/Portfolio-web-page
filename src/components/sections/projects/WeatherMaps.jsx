@@ -8,7 +8,7 @@ export default function WeatherMaps() {
     return (
         <div className={styles.project}>
             <div className={styles.textWrapper}>
-                <div className={styles.description} n>
+                <div className={styles.description}>
                     <h2> Weather and maps app</h2>
                     <div className={styles.technologies}>
                         <p>HTML</p>

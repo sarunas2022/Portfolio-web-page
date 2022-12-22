@@ -8,7 +8,7 @@ export default function EventsApp() {
     return (
         <div className={styles.project}>
             <div className={styles.textWrapper}>
-                <div className={styles.description} n>
+                <div className={styles.description}>
                     <h2> Event register</h2>
                     <div className={styles.technologies}>
                         <p>SASS</p>

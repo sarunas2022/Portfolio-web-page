@@ -8,7 +8,7 @@ export default function SplitBills() {
     return (
         <div className={styles.project}>
             <div className={styles.textWrapper}>
-                <div className={styles.description} n>
+                <div className={styles.description}>
                     <h2> Split Bills</h2>
                     <div className={styles.technologies}>
                         <p>HTML</p>
