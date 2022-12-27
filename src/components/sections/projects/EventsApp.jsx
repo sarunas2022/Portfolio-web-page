@@ -49,7 +49,7 @@ export default function EventsApp() {
                         <a
                             target='_blank'
                             rel='noreferrer'
-                            href='https://sgrab-events.herokuapp.com'
+                            href='https://sg-events-app.netlify.app'
                         >
                             <ProjectButton
                                 text='Visit the website'
