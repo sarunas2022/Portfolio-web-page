@@ -48,7 +48,7 @@ export default function WeatherMaps() {
                         <a
                             target='_blank'
                             rel='noreferrer'
-                            href='https://sgrab-weather-maps.herokuapp.com'
+                            href='https://sg-wathermap.netlify.app'
                         >
                             <ProjectButton
                                 text='Visit the website'
