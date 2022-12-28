@@ -15,8 +15,10 @@ export default function Contacts() {
         user_email: '',
         message: '',
     });
+
     // setting error value to state
     const [error, setError] = useState('');
+
     // Setting input value to useState
     const handleChange = (e) => {
         setValues((values) => ({
@@ -24,8 +26,10 @@ export default function Contacts() {
             [e.target.name]: e.target.value,
         }));
     };
+
     // status state for form submit
     const [status, setStatus] = useState('idle');
+
     // use effect with 3 sec timeout to change status back to Idle, it makes  success or error message disappear
     useEffect(() => {
         if (status === 'fulfilled' || status === 'rejected') {
@@ -62,6 +66,7 @@ export default function Contacts() {
     // This function  is used on form submit to send input data to  emailJS
     const sendEmail = async (e) => {
         e.preventDefault();
+
         // checking if all required fields has value
         if (!values.user_name || !values.user_email || !values.message) {
             // if not saving error message for each of the input fields
@@ -83,6 +88,7 @@ export default function Contacts() {
                     message_error: 'Message is required*',
                 }));
             }
+
             // if all input fields are filled, proceeding with email through emailJS
         } else {
             setStatus('loading');
@@ -93,6 +99,7 @@ export default function Contacts() {
                     e.target,
                     '75Is36MYrzkkr0LrL'
                 );
+
                 // setting input values and errors back to '' to clear input fields after email is successfully sent
                 setValues({ user_name: '', user_email: '', message: '' });
 
@@ -103,6 +110,7 @@ export default function Contacts() {
             }
         }
     };
+
     // loader display while message is not sent
     const submitLoading = (
         <div className={styles.loader}>
@@ -122,6 +130,7 @@ export default function Contacts() {
             <BiCheck size='2rem' />
         </motion.div>
     );
+
     // message popup if email was not sent
     const submitMessageError = (
         <motion.div
