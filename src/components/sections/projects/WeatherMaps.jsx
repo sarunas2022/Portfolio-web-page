@@ -34,6 +34,13 @@ export default function WeatherMaps() {
                         agrees to show his location, the app displays maps and
                         weather data for the current location.
                     </p>
+                    <p>
+                        <span>
+                            Note: server-side is hosted for free in Render.after
+                            15 min of inactivity it goes to sleep. Please allow
+                            15-30s to spin up.{' '}
+                        </span>
+                    </p>
                     <div className={styles.projectButtons}>
                         <a
                             target='_blank'
