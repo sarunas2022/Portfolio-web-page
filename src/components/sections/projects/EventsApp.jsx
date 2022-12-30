@@ -30,10 +30,10 @@ export default function EventsApp() {
                     <p>
                         All CRUD operations were used and data is saved in
                         database. It also has a registration and login page with
-                        back-end authentication/authorization on the server side
-                        using the JWT token, passwords are saved in the database
-                        hashed with BCRIPT, form validation using JOI, and for
-                        routing EXPRESS npm package was used.
+                        back-end authentication/authorization using the JWT
+                        token, passwords are saved in the database hashed with
+                        BCRIPT, form validation using JOI, and for routing
+                        EXPRESS npm package was used.
                     </p>
                     <div className={styles.projectButtons}>
                         <a
@@ -49,7 +49,7 @@ export default function EventsApp() {
                         <a
                             target='_blank'
                             rel='noreferrer'
-                            href='https://sg-events-app.netlify.app'
+                            href='https://sgrab-events.herokuapp.com'
                         >
                             <ProjectButton
                                 text='Visit the website'

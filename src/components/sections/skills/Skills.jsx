@@ -10,7 +10,6 @@ import JSIcon from '../../../files/techIcons/front-end/javaScript.png';
 import reactIcon from '../../../files/techIcons/front-end/react-icon.png';
 import sassIcon from '../../../files/techIcons/front-end/sass.png';
 import muiIcon from '../../../files/techIcons/front-end/mui.png';
-import bootstrapIcon from '../../../files/techIcons/front-end/bootstrap.png';
 import framer from '../../../files/techIcons/front-end/framer-motion.png';
 
 // tool skills images
@@ -19,6 +18,7 @@ import postmanIcon from '../../../files/techIcons/tools/postman.webp';
 import gitIcon from '../../../files/techIcons/tools/Git.png';
 import vsIcon from '../../../files/techIcons/tools/vs.png';
 import herokuIcon from '../../../files/techIcons/tools/heroku.png';
+import netlifyIcon from '../../../files/techIcons/tools/netlify.webp';
 
 // back-end skills images
 import nodeIcon from '../../../files/techIcons/back-end/node.webp';
@@ -87,10 +87,6 @@ export default function Skills() {
                     <p>Material UI</p>
                 </div>
                 <div className={styles.skill}>
-                    <img src={bootstrapIcon} alt='Bootstrap' />
-                    <p>Bootstrap</p>
-                </div>
-                <div className={styles.skill}>
                     <img src={framer} alt='framer-motion' />
                     <p>Framer-motion</p>
                 </div>
@@ -125,6 +121,10 @@ export default function Skills() {
                 <div className={styles.skill}>
                     <img src={herokuIcon} alt='heroku' />
                     <p>Heroku</p>
+                </div>
+                <div className={styles.skill}>
+                    <img src={netlifyIcon} alt='netlify' />
+                    <p>Netlify</p>
                 </div>
             </div>
         </motion.div>
