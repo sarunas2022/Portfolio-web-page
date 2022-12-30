@@ -36,9 +36,9 @@ export default function WeatherMaps() {
                     </p>
                     <p>
                         <span>
-                            Note: server-side is hosted for free in Render.after
-                            15 min of inactivity it goes to sleep. Please allow
-                            15-30s to spin up.{' '}
+                            Note: server-side is hosted for free in Render.
+                            After 15 min of inactivity it goes to sleep. Please
+                            allow 15-30s to spin up.
                         </span>
                     </p>
                     <div className={styles.projectButtons}>
