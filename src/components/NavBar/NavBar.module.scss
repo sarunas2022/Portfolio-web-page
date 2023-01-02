@@ -13,9 +13,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        h1 {
-            color: rgb(45, 215, 130);
+        a {
+            text-decoration: none;
+            h1 {
+                color: rgb(45, 215, 130);
+            }
         }
+
         .hamburger {
             z-index: 4;
             cursor: pointer;
@@ -55,9 +59,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            h1 {
-                color: rgb(45, 215, 130);
+            a {
+                text-decoration: none;
+                h1 {
+                    color: rgb(45, 215, 130);
+                }
             }
+
             .links {
                 display: flex;
                 list-style: none;
