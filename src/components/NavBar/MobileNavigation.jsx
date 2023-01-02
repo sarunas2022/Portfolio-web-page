@@ -27,7 +27,9 @@ export default function MobileNavigation() {
 
     return (
         <nav className={styles.mobileNav}>
-            <h1>ŠG.</h1>
+            <a href='#home'>
+                <h1>ŠG.</h1>
+            </a>
             {open ? hamburgerOpened : hamburgerClosed}
             {open && (
                 <NavLinks isMobile={true} closeMobileMenu={mobileNavClosed} />
