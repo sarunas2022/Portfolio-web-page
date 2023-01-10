@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './Projects.module.scss';
-import NFTLandingPage from './NFTLandingPage';
+// import NFTLandingPage from './NFTLandingPage';
 import SplitBills from './SplitBills';
 import WeatherMaps from './WeatherMaps';
 import EventsApp from './EventsApp';
+import QrCode from './EventsApp';
 
 export default function Projects() {
     return (
@@ -13,7 +14,7 @@ export default function Projects() {
                 <WeatherMaps />
                 <EventsApp />
                 <SplitBills />
-                <NFTLandingPage />
+                <QrCode />
             </div>
         </section>
     );
