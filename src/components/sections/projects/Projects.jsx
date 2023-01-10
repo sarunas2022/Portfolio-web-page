@@ -4,7 +4,7 @@ import styles from './Projects.module.scss';
 import SplitBills from './SplitBills';
 import WeatherMaps from './WeatherMaps';
 import EventsApp from './EventsApp';
-import QrCode from './EventsApp';
+import QrCode from './QrCode';
 
 export default function Projects() {
     return (

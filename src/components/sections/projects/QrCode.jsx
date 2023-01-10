@@ -12,7 +12,8 @@ export default function WeatherMaps() {
                     <h2> QR code generator</h2>
                     <div className={styles.technologies}>
                         <p>HTML</p>
-                        <p>SASS</p>
+                        <p>CSS</p>
+                        <p>MUI</p>
                         <p>REACT</p>
                     </div>
 
