@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './header.module.scss';
-import photo from '../../files/cropped.jpg';
+import photo from '../../files/Optimized-cropped1.jpg';
 import { motion } from 'framer-motion';
 import Wave from './Wave';
 import NavigationButton from '../buttons/NavigationButton';
